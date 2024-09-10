@@ -61,11 +61,9 @@ Puedes incluir tablas en markdown de la siguiente manera:
 
 Puedes incluir imágenes en tu documentación también:
 
-![Logo de GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Logo](https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png)
 
-## Citas y Bloques de Código
-
-> "La simplicidad es la máxima sofisticación." – Leonardo da Vinci
+## Bloques de Código
 
 ```bash
 # Este es un bloque de código en Bash
