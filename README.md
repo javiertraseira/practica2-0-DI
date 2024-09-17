@@ -6,12 +6,18 @@
  
  El archivo debe contener varios apartados que incluyan texto formateado, comandos de instalación, listas, tablas y ejemplos de código, como en las capturas mostradas a continuación y que utilice los elementos que permite el lenguaje (título, negrita, cursivas, tablas, imágenes, listas, enlaces etc.)
 
+
 ## Requerimientos formales
+
+Deberá tener al menos los siguientes apartados:
 
  - Título principal
  - Títulos secundarios: descripción, instalación, uso, características, tablas, listas, etc.
- - Lista de tareas pendientes
+ - Una lista de tareas pendientes
+ - Una tabla con al menos dos columnas y dos filas
+ - Al menos una imagen
  - Un bloque de código formateado
+ - Enlaces de webs externas
 
 
  ![](media/parte1.png) 
