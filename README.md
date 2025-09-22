@@ -56,6 +56,9 @@ El `README.md` debe incluir:
 1. **Guarda los cambios** de tu archivo `README.md`.  
 2. **Haz un commit** con un mensaje que describa los avances:  
 
+![](media/commit_GitHub_Desktop.png)
+
+En GitHub CLI:
 ```bash
 git add README.md
 git commit -m "Añadido README inicial con estructura en Markdown"
@@ -65,11 +68,11 @@ git commit -m "Añadido README inicial con estructura en Markdown"
 
 ![](media/push_GitHub_Desktop.png)
 
+En GitHub CLI:
 ```bash
 git push origin main
 ```  
 
-(En GitHub Desktop: *Commit to main* → *Push origin*).  
 
 4. **Investiga cómo revertir** uno de los commits que hayas subido al repositorio (`main`).  
    - Ejemplo con Git:  
