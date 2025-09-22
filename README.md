@@ -2,34 +2,21 @@
 
 El objetivo de esta práctica es familiarizarte con GitHub Classroom, Git/GitHub Desktop y GitHub CLI, y aprender a documentar proyectos usando el lenguaje Markdown.
 
-## Parte 1 Preparación de herramientas de trabajo
+## Parte 1 Instalación de herramientas de trabajo
 
-ntes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:  
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:  
 
 - [GitHub Desktop](https://desktop.github.com/)  
 - [GitHub CLI](https://cli.github.com/)  
-- [Git](https://git-scm.com/) (si no lo tienes ya instalado)  
+- [Git](https://git-scm.com/)  
 
-
- Una vez instalados, **configura Git en tu equipo** (nombre y correo):  
-
-```bash
-git config --global user.name "Tu Nombre"
-git config --global user.email "tu@email.com"
-``` 
-
-Con GitHub CLI puedes iniciar sesión desde terminal con:
-
-```bash
-gh auth login
-```
 
 ## Parte 2: Acceso a GitHub Classroom
 
-1. Accede a tu cuenta de *GitHub Classroom* y acepta la tarea que se te ha asignado desde el enlace de Teams de la tarea de clase.
+1. Accede a tu cuenta de *GitHub Classroom* y acepta la tarea que se te ha asignado desde el enlace de **Teams** de la tarea de clase.
 2. Se generará un repositorio personal para ti en GitHub.
 
-Parte 3: Clonado del repositorio
+## Parte 3: Clonado del repositorio
 
 Clona el repositorio en tu ordenador usando una de estas opciones:
 
@@ -43,7 +30,7 @@ Usa el comando:
 git clone <url-del-repositorio>
 ```
 
-## Parte 3: Creación de la documentación en Markdown
+## Parte 4: Creación de la documentación en Markdown
 
 1. Dentro del repositorio clonado, crea un archivo llamado *README.md*
 
@@ -64,7 +51,7 @@ El `README.md` debe incluir:
 - **Enlace externo** a una web  
 
 
-## Parte 4: Subida y control de versiones  
+## Parte 5: Subida y control de versiones  
 
 1. **Guarda los cambios** en tu archivo `README.md`.  
 2. **Haz un commit** con un mensaje que describa los avances:  
