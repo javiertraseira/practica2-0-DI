@@ -1,4 +1,4 @@
-# Práctica 2.0 Repositorios y el lenguaje Markdown 
+# Práctica 2.0 Trabajo con repositorios en GitHub y documentación en Markdown
 
 El objetivo de esta práctica es familiarizarte con GitHub Classroom, Git/GitHub Desktop y GitHub CLI, y aprender a documentar proyectos usando el lenguaje Markdown.
 
@@ -62,10 +62,6 @@ El `README.md` debe incluir:
 - **Imagen** insertada  
 - **Bloque de código** con formato (ej.: instrucciones de instalación)  
 - **Enlace externo** a una web  
-
-    ![](media/parte1.png) 
-
-    ![](media/parte2.png) 
 
 
 ## Parte 4: Subida y control de versiones  
