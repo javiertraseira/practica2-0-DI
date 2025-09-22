@@ -30,11 +30,11 @@ Usa el comando:
 git clone <url-del-repositorio>
 ```
 
-## Parte 4: Creación de la documentación en Markdown
+## Parte 4: Creación de documentación en formato Markdown
 
 1. Dentro del repositorio clonado, crea un archivo llamado *README.md*
 
-2. Ese archivo servirá como documentación de un proyecto ficticio y debe mostrar los principales elementos del lenguaje Markdown.
+2. Ese archivo servirá como **documentación** de un proyecto ficticio y deberá para ello utilizar los principales elementos del lenguaje Markdown.
 
 ### Requerimientos formales
 
@@ -53,7 +53,7 @@ El `README.md` debe incluir:
 
 ## Parte 5: Subida y control de versiones  
 
-1. **Guarda los cambios** en tu archivo `README.md`.  
+1. **Guarda los cambios** de tu archivo `README.md`.  
 2. **Haz un commit** con un mensaje que describa los avances:  
 
 ```bash
