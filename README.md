@@ -11,7 +11,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:
 - [Git](https://git-scm.com/)  
 
 
-## Parte 2: Acceso a GitHub Classroom
+## Parte 2: Acceso a GitHub Classroom 
 
 1. Accede a tu cuenta de *GitHub Classroom* y acepta la tarea que se te ha asignado desde el enlace de **Teams** de la tarea de clase.
 2. Se generará un repositorio personal para ti en GitHub.
@@ -20,11 +20,21 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:
 
 Clona el repositorio en tu ordenador usando una de estas opciones:
 
-- Con **GitHub Desktop**:
-Al hacer clic en el enlace de Teams haz clic en *Clone a repository*.
+1. Con **GitHub Desktop**:
+- Al hacer clic en el enlace de Teams haz clic en *Clone a repository*.
+- Deberás de autenticarte en el programa.
 
-- Con **GitHub CLI**:
-Usa el comando:
+2. Con **GitHub CLI**:
+
+- Probaremos también de esta forma igualmente.
+- Autentifícate primeramente usando el comando:
+
+```bash
+gh auth login
+```
+> Te preguntará el método de autenticación, puedes seleccionar el navegador web e introducir tus credenciales.
+
+- Luego usa el comando para clonar:
 
 ```bash
 gh repo clone javiertraseira/practica2-0-DI
