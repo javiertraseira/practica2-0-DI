@@ -27,7 +27,7 @@ Al hacer clic en el enlace de Teams haz clic en *Clone a repository*.
 Usa el comando:
 
 ```bash
-git clone <url-del-repositorio>
+gh repo clone javiertraseira/practica2-0-DI
 ```
 
 ## Parte 4: Creación de documentación en formato Markdown
