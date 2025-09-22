@@ -63,6 +63,8 @@ git commit -m "Añadido README inicial con estructura en Markdown"
 
 3. **Sube los cambios al repositorio remoto**:  
 
+![](media/push_GitHub_Desktop.png)
+
 ```bash
 git push origin main
 ```  
