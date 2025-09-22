@@ -26,7 +26,7 @@ Clona el repositorio en tu ordenador usando una de estas opciones:
 
 2. Con **GitHub CLI**:
 
-- Probaremos también de esta forma igualmente.
+- Probaremos también de esta forma.
 - Autentifícate primeramente usando el comando:
 
 ```bash
@@ -48,9 +48,7 @@ gh repo clone javiertraseira/practica2-0-DI
 
 ### Requerimientos formales
 
-El archivo debe contener varios apartados en los que se incluyan los elementos que permite el lenguaje; texto formateado, una lista, una tabla, imágenes, enlaces y un bloque de código de código de instalación, como en las capturas mostradas a continuación
-
-El `README.md` debe incluir:  
+El `README.md` deberá incluir:  
 
 - **Título principal** del proyecto  
 - **Títulos secundarios** (ej.: Descripción, Instalación, Uso, Características, etc.)  
@@ -66,35 +64,36 @@ El `README.md` debe incluir:
 1. **Guarda los cambios** de tu archivo `README.md`.  
 2. **Haz un commit** con un mensaje que describa los avances:  
 
-- En **Github Desktop**:
+- Desde **Github Desktop**:
 
 ![](media/commit_GitHub_Desktop.png)
 
-- En **GitHub CLI**:
+- Desde **GitHub CLI**:
+
 ```bash
 git add README.md
 git commit -m "Añadido README inicial con estructura en Markdown"
 ```  
 
-3. **Sube los cambios al repositorio remoto**:  
+3. **Subir los cambios al repositorio remoto**:  
 
-- En **Github Desktop**:
+- Desde **Github Desktop**:
 
 ![](media/push_GitHub_Desktop.png)
 
-- En **GitHub CLI**:
+- Desde **GitHub CLI**:
 ```bash
 git push origin main
 ```  
 
 
-4. **Investiga cómo revertir** uno de los commits que hayas subido al repositorio (`main`).  
+4. **Investiga cómo revertir** uno de los *commits* que hayas subido al repositorio (`main`).  
    - Ejemplo con Git:  
      ```bash
      git revert <id-del-commit>
      ```  
 
-5. **Clona el repositorio en otro equipo** (por ejemplo, en casa y en clase) y practica cómo **mantener sincronizados ambos repositorios** usando:  
+5. **Clona el repositorio en otro equipo** (por ejemplo, en casa y en clase) y practica cómo **mantener sincronizados ambos repositorios** usando Github Desktop o mediante; 
 
 ```bash
 git pull origin main
