@@ -21,7 +21,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:
 Clona el repositorio en tu ordenador usando una de estas opciones:
 
 - Con **GitHub Desktop**:
-Al hacer clic en el enlace de Teams haz clic en 'Clone a repository'.
+Al hacer clic en el enlace de Teams haz clic en *Clone a repository*.
 
 - Con **GitHub CLI**:
 Usa el comando:
