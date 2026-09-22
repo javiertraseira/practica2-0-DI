@@ -1,6 +1,6 @@
 # Práctica 2.0 Trabajo con repositorios en GitHub y documentación en Markdown
 
-El objetivo de esta práctica es familiarizarte con GitHub Classroom, Git/GitHub Desktop y GitHub CLI, y aprender a documentar proyectos usando el lenguaje Markdown.
+El objetivo de esta práctica es familiarizarte con Classroom 50, Git/GitHub Desktop y GitHub CLI, y aprender a documentar proyectos usando el lenguaje Markdown.
 
 ## Parte 1 Instalación de herramientas de trabajo
 
@@ -13,7 +13,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:
 
 ## Parte 2: Acceso a GitHub Classroom 
 
-1. Accede a tu cuenta de *GitHub Classroom* y acepta la tarea que se te ha asignado desde el enlace de **Teams** de la tarea de clase.
+1. Accede a tu cuenta de *Classroom 50* y acepta la tarea que se te ha asignado desde el enlace de **Teams** de la tarea de clase.
 2. Se generará un repositorio personal para ti en GitHub.
 
 ## Parte 3: Clonado del repositorio
