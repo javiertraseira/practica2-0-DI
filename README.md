@@ -1,6 +1,6 @@
 # Práctica 2.0 Trabajo con repositorios en GitHub y documentación en Markdown
 
-El objetivo de esta práctica es familiarizarte con Classroom 50, Git/GitHub Desktop y GitHub CLI, y aprender a documentar proyectos usando el lenguaje Markdown.
+El objetivo de esta práctica es familiarizarte con el entorno de trabajo (*github, Classroom50, ficheros markdown*) que utilizaremos durante el curso para gestionar las prácticas de la asignatura.
 
 ## Parte 1 Instalación de herramientas de trabajo
 
@@ -10,94 +10,259 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:
 - [GitHub CLI](https://cli.github.com/)  
 - [Git](https://git-scm.com/)  
 
+También necesitarás disponer de una cuenta de GitHub y estar correctamente identificado en Classroom 50.
+
 
 ## Parte 2: Acceso a Classroom 50
 
-1. Accede a tu cuenta de *Classroom 50* y acepta la tarea que se te ha asignado desde el enlace de **Teams** de la tarea de clase.
-2. Se generará un repositorio personal para ti en GitHub.
+1. Accede al enlace de la tarea proporcionado por el profesor en Teams.
+
+2. Inicia sesión utilizando tu cuenta de GitHub si fuera necesario.
+
+3. Acepta la tarea.
+
+Classroom 50 creará automáticamente un **repositorio privado para ti** a partir del repositorio plantilla preparado por el profesor.
+
+> **Importante:** debes trabajar siempre sobre el repositorio que Classroom 50 ha creado para ti. No debes clonar directamente el repositorio plantilla del profesor.
+
+4. Accede desde Classroom 50 al repositorio que se ha creado para ti.
+
+5. Comprueba que el repositorio contiene, al menos, este archivo `README.md`.
 
 ## Parte 3: Clonado del repositorio
 
-Clona el repositorio en tu ordenador usando una de estas opciones:
+Ahora vas a clonar, es decir, descargar una copia de **tu repositorio personal** en el ordenador.
 
-1. Con **GitHub Desktop**:
-- Al hacer clic en el enlace de Teams haz clic en *Clone a repository*.
-- Deberás de autenticarte en el programa.
+### Opción A – GitHub Desktop
 
-2. Con **GitHub CLI**:
+1. Accede en GitHub al repositorio que Classroom 50 ha creado para ti.
+2. Pulsa **Code**.
+3. Selecciona **Open with GitHub Desktop**.
+4. Selecciona la carpeta de tu ordenador en la que quieres guardar el proyecto.
+5. Pulsa **Clone**.
 
-- Probaremos también de esta forma.
-- Autentifícate primeramente usando el comando:
+Comprueba que el repositorio aparece correctamente en GitHub Desktop.
+
+### Opción B – GitHub CLI
+
+También practicaremos el acceso a GitHub mediante la línea de comandos.
+
+Primero autentícate:
 
 ```bash
 gh auth login
 ```
+
 > Te preguntará el método de autenticación, puedes seleccionar el navegador web e introducir tus credenciales.
 
-- Luego usa el comando para clonar:
+- Después, desde **tu repositorio personal en GitHub**, pulsa:
+
+**Code → Local → GitHub CLI**
+
+GitHub te mostrará un comando similar a:
 
 ```bash
-gh repo clone javiertraseira/practica2-0-DI
+gh repo clone dam-di-26-27/practica2-0-DI
 ```
+
+Copia y ejecuta **el comando correspondiente a tu repositorio**.
+
+> No utilices `gh repo clone javiertraseira/practica2-0-DI`. Ese es el repositorio plantilla del profesor y no tu repositorio de trabajo.
+
 
 ## Parte 4: Creación de documentación en formato Markdown
 
-1. Dentro del repositorio clonado, crea un archivo llamado *README.md*
+En el repositorio encontrarás este archivo `README.md`, que contiene el enunciado de la práctica.
 
-2. Ese archivo servirá como **documentación** de un proyecto ficticio y deberá para ello utilizar los principales elementos del lenguaje Markdown.
+**No debes sustituir ni eliminar este archivo.**
 
-### Requerimientos formales
+Crea en la raíz del repositorio un nuevo archivo llamado:
 
-El `README.md` deberá incluir:  
+```text
+DOCUMENTACION.md
+```
 
-- **Título principal** del proyecto  
-- **Títulos secundarios** (ej.: Descripción, Instalación, Uso, Características, etc.)  
-- **Lista de tareas pendientes** (checklist con `- [ ]`)  
-- **Tabla** con al menos 2 columnas y 2 filas  
-- **Imagen** insertada  
-- **Bloque de código** con formato (ej.: instrucciones de instalación)  
-- **Enlace externo** a una web  
+Este archivo representará la documentación de un proyecto ficticio desarrollado por ti.
+
+Puedes elegir libremente el tipo de aplicación: una aplicación de gestión, una aplicación móvil, un videojuego, una herramienta educativa, etc.
+
+### Contenido mínimo
+
+El archivo `DOCUMENTACION.md` deberá utilizar correctamente Markdown e incluir, como mínimo:
+
+- Un título principal.
+- Varios títulos y subtítulos.
+- Una breve descripción del proyecto.
+- Texto en **negrita** y *cursiva*.
+- Una lista ordenada.
+- Una lista no ordenada.
+- Una lista de tareas mediante checkboxes (`- [ ]` y `- [x]`).
+- Una tabla con al menos 2 columnas y 2 filas de datos.
+- Una imagen.
+- Un enlace a una página web externa.
+- Código escrito en línea.
+- Un bloque de código con formato.
+
+Por ejemplo, puedes incluir un apartado de instalación:
+
+```bash
+git clone https://github.com/usuario/proyecto.git
+cd proyecto
+```
+
+Organiza el documento para que pueda entenderse fácilmente. No se trata únicamente de utilizar la sintaxis Markdown solicitada, sino de crear una documentación clara y coherente.
 
 
-## Parte 5: Subida y control de versiones  
+## Parte 5: Subida (commit) y control de versiones  
 
-1. **Guarda los cambios** de tu archivo `README.md`.  
-2. **Haz un commit** con un mensaje que describa los avances:  
+1. **Guarda los cambios** de tu archivo `DOCUMENTACION.md`.  
+2. Deberás **Hacer un commit** con un mensaje que describa los avances:  
 
-- Desde **Github Desktop**:
+### Mediante GitHub Desktop
+
+1. Abre GitHub Desktop.
+2. Comprueba los cambios realizados.
+3. Escribe un mensaje de commit descriptivo, por ejemplo:
+
+```text
+Añadida documentación inicial del proyecto
+```
+4. Realiza el commit.
+5. Utiliza **Push origin** para enviar los cambios a GitHub.
 
 ![](media/commit_GitHub_Desktop.png)
 
-- Desde **GitHub CLI**:
+### Desde GitHub CLI
+
+También puedes realizar las mismas operaciones desde la terminal:
 
 ```bash
-git add README.md
-git commit -m "Añadido README inicial con estructura en Markdown"
-```  
-
-3. **Subir los cambios al repositorio remoto**:  
-
-- Desde **Github Desktop**:
-
-![](media/push_GitHub_Desktop.png)
-
-- Desde **GitHub CLI**:
-```bash
+git status
+git add DOCUMENTACION.md
+git commit -m "Añadida documentación inicial del proyecto"
 git push origin main
 ```  
 
+Comprueba qué información proporciona `git status` antes y después de realizar el commit.
 
-4. **Investiga cómo revertir** uno de los *commits* que hayas subido al repositorio (`main`).  
-   - Ejemplo con Git:  
-     ```bash
-     git revert <id-del-commit>
-     ```  
+## Parte 6 – Realizar un segundo cambio
 
-5. **Clona el repositorio en otro equipo** (por ejemplo, en casa y en clase) y practica cómo **mantener sincronizados ambos repositorios** usando Github Desktop o mediante; 
+Modifica ahora `DOCUMENTACION.md`.
+
+Por ejemplo:
+
+- añade una nueva característica de la aplicación;
+- marca alguna tarea de la checklist como completada;
+- añade una nueva fila a la tabla.
+
+Realiza un segundo commit:
+
+```bash
+git add DOCUMENTACION.md
+git commit -m "Actualizada documentación del proyecto"
+git push origin main
+```
+
+Comprueba en GitHub que aparecen los diferentes commits realizados.
+
+---
+
+## Parte 7 – Revertir un commit
+
+Vamos a practicar cómo deshacer un cambio que **ya ha sido registrado en Git**.
+
+1. Realiza una modificación claramente identificable en `DOCUMENTACION.md`.
+
+Por ejemplo, añade:
+
+```markdown
+## Sección temporal
+
+Este contenido se eliminará posteriormente mediante git revert.
+```
+
+2. Realiza un commit y súbelo:
+
+```bash
+git add DOCUMENTACION.md
+git commit -m "Añadida sección temporal"
+git push origin main
+```
+
+3. Consulta el historial:
+
+```bash
+git log --oneline
+```
+
+Localiza el identificador del commit que acabas de realizar.
+
+4. Reviértelo mediante:
+
+```bash
+git revert <id-del-commit>
+```
+
+5. Si Git abre un editor para confirmar el mensaje del nuevo commit, guarda y cierra el editor.
+
+6. Envía el nuevo commit a GitHub:
+
+```bash
+git push origin main
+```
+
+7. Comprueba el historial en GitHub.
+
+### Reflexiona
+
+Observa que `git revert` **no elimina el commit anterior del historial**. En su lugar crea un nuevo commit que deshace sus cambios.
+
+---
+
+## Parte 8 – Trabajar desde dos equipos
+
+Esta parte pretende simular una situación habitual: trabajar con el mismo proyecto desde distintos ordenadores, por ejemplo, desde el aula y desde casa.
+
+En el segundo ordenador:
+
+1. Clona **tu mismo repositorio personal**.
+2. Modifica `DOCUMENTACION.md`.
+3. Realiza un commit.
+4. Ejecuta `push` para enviar el cambio a GitHub.
+
+Cuando vuelvas al primer ordenador, el repositorio local todavía no tendrá ese cambio.
+
+Antes de continuar trabajando ejecuta:
 
 ```bash
 git pull origin main
-```  
+```
+
+Comprueba que los cambios realizados desde el segundo equipo aparecen ahora también en el primero.
+
+> Antes de empezar a trabajar en un proyecto desde otro ordenador, acostúmbrate a sincronizar primero el repositorio.
+
+---
+
+## Parte 9 – Comprobación final
+
+Antes de considerar terminada la práctica, comprueba que:
+
+- Estás trabajando en el repositorio personal creado por Classroom 50.
+- El archivo `README.md` original continúa en el repositorio.
+- Has creado `DOCUMENTACION.md`.
+- `DOCUMENTACION.md` contiene los elementos Markdown solicitados.
+- Has realizado varios commits con mensajes descriptivos.
+- Has enviado los commits al repositorio remoto mediante `push`.
+- Has realizado correctamente un `git revert`.
+- Has practicado la sincronización mediante `git pull`.
+- Todos los cambios aparecen en tu repositorio de GitHub.
+
+## Entrega
+
+La entrega se realizará mediante el repositorio personal generado por Classroom 50.
+
+Asegúrate de que **todos tus cambios y commits se encuentran en GitHub** antes de dar por finalizada la práctica.
 
 
 
