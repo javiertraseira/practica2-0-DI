@@ -11,7 +11,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu equipo:
 - [Git](https://git-scm.com/)  
 
 
-## Parte 2: Acceso a GitHub Classroom 
+## Parte 2: Acceso a Classroom 50
 
 1. Accede a tu cuenta de *Classroom 50* y acepta la tarea que se te ha asignado desde el enlace de **Teams** de la tarea de clase.
 2. Se generará un repositorio personal para ti en GitHub.
