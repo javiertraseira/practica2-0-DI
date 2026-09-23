@@ -213,34 +213,17 @@ git push origin main
 
 7. Comprueba el historial en GitHub.
 
-### Reflexiona
-
-Observa que `git revert` **no elimina el commit anterior del historial**. En su lugar crea un nuevo commit que deshace sus cambios.
+> Observa que `git revert` **no elimina el commit anterior del historial**. En su lugar crea un nuevo commit que deshace sus cambios.
 
 ---
 
-## Parte 8 – Trabajar desde dos equipos
+Si quieres continuar trabajando en el proyecto desde otro ordenador, como desde casa, puedes hacerlo utilizando el mismo repositorio de GitHub.
 
-Esta parte pretende simular una situación habitual: trabajar con el mismo proyecto desde distintos ordenadores, por ejemplo, desde el aula y desde casa.
-
-En el segundo ordenador:
-
-1. Clona **tu mismo repositorio personal**.
-2. Modifica `DOCUMENTACION.md`.
-3. Realiza un commit.
-4. Ejecuta `push` para enviar el cambio a GitHub.
-
-Cuando vuelvas al primer ordenador, el repositorio local todavía no tendrá ese cambio.
-
-Antes de continuar trabajando ejecuta:
-
-```bash
-git pull origin main
-```
-
-Comprueba que los cambios realizados desde el segundo equipo aparecen ahora también en el primero.
-
+La primera vez que trabajes desde ese ordenador **clona** **tu repositorio personal** en el nuevo equipo, igual que hiciste anteriormente:
 > Antes de empezar a trabajar en un proyecto desde otro ordenador, acostúmbrate a sincronizar primero el repositorio.
+
+A partir de ese momento tendrás una copia local del mismo repositorio en ambos equipos.
+
 
 ---
 
