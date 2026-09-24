@@ -287,10 +287,180 @@ La primera vez que trabajes desde ese ordenador **clona** **tu repositorio perso
 
 A partir de ese momento tendrás una copia local del mismo repositorio en ambos equipos.
 
+## Parte 8 – Trabajar con ramas
+
+Hasta ahora todos los cambios realizados se han guardado directamente en la rama principal del proyecto, denominada `main`.
+
+Una **rama (branch)** permite crear una línea de trabajo independiente dentro del repositorio. De esta forma podemos realizar cambios o desarrollar una nueva funcionalidad **sin modificar directamente la versión principal del proyecto**.
+
+Por ejemplo:
+
+```text
+main
+  │
+  ├── commit 1
+  │
+  ├── commit 2
+  │
+  └───────┐
+          │
+          │  mejora-documentacion
+          ├── commit 3
+          └── commit 4
+```
+
+Cuando el trabajo realizado en la rama esté terminado y comprobado, sus cambios pueden incorporarse nuevamente a `main` mediante una operación denominada **merge**.
+
+> **Importante:** los commits que realices pertenecen a la rama en la que estés situado en ese momento. Antes de modificar archivos, comprueba siempre en qué rama estás trabajando.
+
+**1. Crear una nueva rama**
+
+Vamos a crear una rama denominada:
+
+```text
+mejora-documentacion
+```
+
+**Mediante GitHub Desktop:**
+
+- Pulsa sobre **Current Branch**.
+- Selecciona **New Branch**.
+- Introduce como nombre `mejora-documentacion`.
+- Crea la nueva rama.
+- Comprueba que **Current Branch** muestra ahora `mejora-documentacion`.
+- Pulsa **Publish branch** para publicar también la rama en GitHub.
+
+**Mediante Git:**
+
+Primero puedes consultar las ramas existentes:
+
+```bash
+git branch
+```
+
+La rama en la que te encuentras aparece marcada con `*`.
+
+Crea la nueva rama y cambia a ella:
+
+```bash
+git switch -c mejora-documentacion
+```
+
+Comprueba nuevamente la rama activa:
+
+```bash
+git branch
+```
+
+Publica la nueva rama en GitHub:
+
+```bash
+git push -u origin mejora-documentacion
+```
+
+**2. Realizar cambios en la nueva rama**
+
+Comprueba que estás trabajando en `mejora-documentacion` y modifica el archivo `DOCUMENTACION.md`.
+
+Por ejemplo, añade un nuevo apartado:
+
+```markdown
+## Próximas mejoras
+
+En futuras versiones se añadirán nuevas funcionalidades a la aplicación.
+```
+
+Realiza un commit **estando situado en la rama `mejora-documentacion`**.
+
+**Mediante GitHub Desktop:**
+
+- Comprueba que **Current Branch** indica `mejora-documentacion`.
+- Comprueba los cambios en **Changes**.
+- Introduce el mensaje `Añadidas próximas mejoras`.
+- Realiza el commit.
+- Pulsa **Push origin**.
+
+**Mediante Git:**
+
+```bash
+git add DOCUMENTACION.md
+git commit -m "Añadidas próximas mejoras"
+git push
+```
+
+Accede al repositorio en GitHub y comprueba que ahora existen las ramas `main` y `mejora-documentacion`.
+
+**3. Volver a la rama principal**
+
+Ahora vamos a regresar a `main`.
+
+**Mediante GitHub Desktop:**
+
+- Pulsa **Current Branch**.
+- Selecciona la rama `main`.
+
+**Mediante Git:**
+
+```bash
+git switch main
+```
+
+Comprueba la rama activa:
+
+```bash
+git branch
+```
+
+Observa el contenido de `DOCUMENTACION.md`.
+
+> Los cambios realizados en `mejora-documentacion` todavía no forman parte de `main`. Cada rama mantiene su propia línea de trabajo.
+
+**4. Fusionar la rama con `main`**
+
+Una vez comprobado que los cambios son correctos, vamos a incorporarlos a la rama principal mediante un **merge**.
+
+Asegúrate primero de estar situado en `main`.
+
+**Mediante GitHub Desktop:**
+
+- Comprueba que **Current Branch** es `main`.
+- Accede a **Current Branch**.
+- Selecciona **Choose a branch to merge into main**.
+- Selecciona `mejora-documentacion`.
+- Realiza el **merge**.
+- Pulsa **Push origin** para enviar los cambios a GitHub.
+
+**Mediante Git:**
+
+```bash
+git switch main
+git merge mejora-documentacion
+git push origin main
+```
+
+**5. Comprobar el resultado**
+
+Comprueba que:
+
+- Existen las ramas `main` y `mejora-documentacion`.
+- El commit `Añadidas próximas mejoras` se realizó inicialmente en `mejora-documentacion`.
+- Después del `merge`, los cambios también aparecen en `main`.
+- Los cambios se encuentran correctamente publicados en GitHub.
+
+El proceso que acabas de realizar puede resumirse así:
+
+```text
+        ┌── mejora-documentacion ── cambios ── commit ──┐
+        │                                               │
+main ───┴────────────────────────────────────────────── merge ──>
+```
+
+> Las ramas permiten desarrollar cambios de forma aislada y **fusionarlos con la rama principal cuando estén terminados y comprobados**.
+
 
 ---
 
-## Parte 8 – Comprobación final
+## Parte 9 – Comprobación final
 
 Antes de considerar terminada la práctica, comprueba que:
 
@@ -312,4 +482,3 @@ Asegúrate de que **todos tus cambios y commits se encuentran en GitHub** antes 
 
 
 
-AÑADIDA SECCION TEMPORAL
