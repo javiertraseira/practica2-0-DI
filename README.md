@@ -169,9 +169,15 @@ Comprueba en GitHub que aparecen los diferentes commits realizados.
 
 ## Parte 7 – Revertir un commit
 
-Vamos a practicar cómo deshacer un cambio que **ya ha sido registrado en Git**.
+## Parte 7 – Revertir un commit
 
-1. Realiza una modificación claramente identificable en `DOCUMENTACION.md`.
+Vamos a practicar cómo deshacer un cambio que **ya ha sido registrado en Git y enviado al repositorio remoto**.
+
+> **Importante:** `git revert` no elimina el commit original. Crea un **nuevo commit** que deshace los cambios realizados.
+
+**1. Realizar un cambio**
+
+Realiza una modificación claramente identificable en `DOCUMENTACION.md`.
 
 Por ejemplo, añade:
 
@@ -181,7 +187,7 @@ Por ejemplo, añade:
 Este contenido se eliminará posteriormente mediante git revert.
 ```
 
-2. Realiza un commit y súbelo:
+**2. Realizar el commit y subirlo**
 
 **Mediante GitHub Desktop:**
 
@@ -189,12 +195,6 @@ Este contenido se eliminará posteriormente mediante git revert.
 - Introduce el mensaje `Añadida sección temporal`.
 - Pulsa **Commit to main**.
 - Pulsa **Push origin**.
-
-3. Consulta el historial:
-
-```bash
-git log --oneline
-```
 
 **Mediante Git:**
 
@@ -204,9 +204,9 @@ git commit -m "Añadida sección temporal"
 git push origin main
 ```
 
-3. Localizar el commit
+**3. Localizar el commit**
 
-Localiza el identificador del commit que acabas de realizar.
+Necesitamos identificar el commit que contiene el cambio que queremos deshacer.
 
 **Mediante GitHub Desktop:**
 
@@ -215,11 +215,24 @@ Localiza el identificador del commit que acabas de realizar.
 
 **Mediante Git:**
 
+Consulta el historial:
+
 ```bash
 git log --oneline
 ```
 
-4. Revertir el commit
+Localiza el identificador del commit que acabas de realizar.
+
+Por ejemplo:
+
+```text
+a7f32c1 Añadida sección temporal
+82d190a Añadida documentación inicial
+```
+
+En este ejemplo, el identificador sería `a7f32c1`.
+
+**4. Revertir el commit**
 
 **Mediante GitHub Desktop:**
 
@@ -227,16 +240,29 @@ git log --oneline
 - Haz clic derecho sobre `Añadida sección temporal`.
 - Selecciona **Revert Changes in Commit**.
 - GitHub Desktop creará un nuevo commit que deshace los cambios.
-- Pulsa **Push origin**.
+- Pulsa **Push origin** para enviarlo a GitHub.
 
 **Mediante Git:**
 
 ```bash
 git revert <id-del-commit>
+```
+
+Por ejemplo:
+
+```bash
+git revert a7f32c1
+```
+
+Si Git abre un editor para confirmar el mensaje del nuevo commit, guarda y cierra el editor.
+
+Finalmente, sube el nuevo commit:
+
+```bash
 git push origin main
 ```
 
-5. Comprobar el resultado
+**5. Comprobar el resultado**
 
 Comprueba que:
 
@@ -252,7 +278,7 @@ a7f32c1 Añadida sección temporal
 82d190a Añadida documentación inicial
 ```
 
-> Observa que `git revert` **no elimina el commit anterior del historial**. En su lugar crea un nuevo commit que deshace sus cambios.
+> Observa que `git revert` **no borra el historial**. El commit original permanece y se añade otro commit que deshace sus cambios.
 
 ---
 
