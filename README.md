@@ -323,12 +323,15 @@ mejora-documentacion
 
 **Mediante GitHub Desktop:**
 
+![](media/branches.png)
+
 - Pulsa sobre **Current Branch**.
 - Selecciona **New Branch**.
 - Introduce como nombre `mejora-documentacion`.
 - Crea la nueva rama.
 - Comprueba que **Current Branch** muestra ahora `mejora-documentacion`.
 - Pulsa **Publish branch** para publicar también la rama en GitHub.
+
 
 **Mediante Git:**
 
@@ -365,6 +368,7 @@ Comprueba que estás trabajando en `mejora-documentacion` y modifica el archivo 
 Por ejemplo, añade un nuevo apartado:
 
 ```markdown
+
 ## Próximas mejoras
 
 En futuras versiones se añadirán nuevas funcionalidades a la aplicación.
