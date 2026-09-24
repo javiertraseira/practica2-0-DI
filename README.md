@@ -169,8 +169,6 @@ Comprueba en GitHub que aparecen los diferentes commits realizados.
 
 ## Parte 7 – Revertir un commit
 
-## Parte 7 – Revertir un commit
-
 Vamos a practicar cómo deshacer un cambio que **ya ha sido registrado en Git y enviado al repositorio remoto**.
 
 > **Importante:** `git revert` no elimina el commit original. Crea un **nuevo commit** que deshace los cambios realizados.
