@@ -290,7 +290,7 @@ A partir de ese momento tendrás una copia local del mismo repositorio en ambos 
 
 ---
 
-## Parte 9 – Comprobación final
+## Parte 8 – Comprobación final
 
 Antes de considerar terminada la práctica, comprueba que:
 
