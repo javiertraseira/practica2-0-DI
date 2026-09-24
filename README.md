@@ -183,11 +183,12 @@ Este contenido se eliminará posteriormente mediante git revert.
 
 2. Realiza un commit y súbelo:
 
-```bash
-git add DOCUMENTACION.md
-git commit -m "Añadida sección temporal"
-git push origin main
-```
+**Mediante GitHub Desktop:**
+
+- Comprueba en **Changes** que aparece modificado `DOCUMENTACION.md`.
+- Introduce el mensaje `Añadida sección temporal`.
+- Pulsa **Commit to main**.
+- Pulsa **Push origin**.
 
 3. Consulta el historial:
 
@@ -195,23 +196,61 @@ git push origin main
 git log --oneline
 ```
 
-Localiza el identificador del commit que acabas de realizar.
-
-4. Reviértelo mediante:
+**Mediante Git:**
 
 ```bash
-git revert <id-del-commit>
-```
-
-5. Si Git abre un editor para confirmar el mensaje del nuevo commit, guarda y cierra el editor.
-
-6. Envía el nuevo commit a GitHub:
-
-```bash
+git add DOCUMENTACION.md
+git commit -m "Añadida sección temporal"
 git push origin main
 ```
 
-7. Comprueba el historial en GitHub.
+3. Localizar el commit
+
+Localiza el identificador del commit que acabas de realizar.
+
+**Mediante GitHub Desktop:**
+
+- Accede a **History**.
+- Localiza el commit `Añadida sección temporal`.
+
+**Mediante Git:**
+
+```bash
+git log --oneline
+```
+
+4. Revertir el commit
+
+**Mediante GitHub Desktop:**
+
+- Accede a **History**.
+- Haz clic derecho sobre `Añadida sección temporal`.
+- Selecciona **Revert Changes in Commit**.
+- GitHub Desktop creará un nuevo commit que deshace los cambios.
+- Pulsa **Push origin**.
+
+**Mediante Git:**
+
+```bash
+git revert <id-del-commit>
+git push origin main
+```
+
+5. Comprobar el resultado
+
+Comprueba que:
+
+- La sección temporal ha desaparecido de `DOCUMENTACION.md`.
+- El commit original sigue apareciendo en el historial.
+- Existe un nuevo commit que revierte el cambio.
+
+Por ejemplo:
+
+```text
+c5d921a Revert "Añadida sección temporal"
+a7f32c1 Añadida sección temporal
+82d190a Añadida documentación inicial
+```
 
 > Observa que `git revert` **no elimina el commit anterior del historial**. En su lugar crea un nuevo commit que deshace sus cambios.
 
