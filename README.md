@@ -477,6 +477,9 @@ Antes de considerar terminada la práctica, comprueba que:
 - Has realizado correctamente un `git revert`.
 - Has practicado la sincronización mediante `git pull`.
 - Todos los cambios aparecen en tu repositorio de GitHub.
+- Has creado y trabajado en la rama `mejora-documentacion`.
+- Has realizado al menos un commit en una rama diferente de `main`.
+- Has fusionado los cambios de `mejora-documentacion` con `main` mediante un `merge`.
 
 ## Entrega
 
